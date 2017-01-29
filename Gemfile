@@ -55,3 +55,8 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 #add jojonari
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'simple_form'
+gem 'simple_enum', '~> 2.0.0' , require: 'simple_enum/mongoid'
+gem 'carrierwave'
+gem 'mini_magick'
+gem "font-awesome-rails"
+
