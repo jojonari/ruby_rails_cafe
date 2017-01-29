@@ -1,5 +1,7 @@
 # README
 
+** 초보자를 위한 레일스 가이드북(https://rorlab.gitbooks.io/railsguidebook/content/)
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
