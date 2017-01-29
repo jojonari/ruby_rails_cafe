@@ -36,8 +36,8 @@
     </div>
 
     <div class="container">
-
-      <%= yield %>
+        <%= flash_messages(:close, :fade) %>
+        <%= yield %>
 
     </div> <!-- /container -->
 </body>

@@ -1,1 +1,20 @@
-<%= render "posts/post_types/#{@bulletin.post_type}" %>
+<% if params["bulletin_id"] %>
+  <%= render "posts/post_types/#{@bulletin.post_type}" %>
+<% else %>
+  <% if params[:tag] %>
+  <h2>Posts tagged with "<%= params[:tag] %>" <small>( <%= @posts.size %> )</small></h2>
+  <% else %>
+  <h2>All Posts <small>( <%= @posts.size %> )</small></h2>
+  <% end %>
+  <ul id='posts_tagged'>
+  
+  <% @posts.each do |post| %>
+    <tr>
+        <td>
+  	  <h3><%= link_to post.title, [post.bulletin, post], class:'' %></h3>
+	  <div class='tag_list'><%= fa_icon('tags') + " " + tag_icons(post.tag_list) %></div>
+	</td>
+    </tr>
+  <% end %>
+  </ul>
+<% end %>

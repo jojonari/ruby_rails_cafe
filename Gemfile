@@ -59,4 +59,6 @@ gem 'simple_enum', '~> 2.0.0' , require: 'simple_enum/mongoid'
 gem 'carrierwave'
 gem 'mini_magick'
 gem "font-awesome-rails"
+gem 'bootstrap_flash_messages', '~> 1.0.1'
+gem 'acts-as-taggable-on', '~> 4.0'
 
